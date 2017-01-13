@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Haoyuan Xia">
+    </head>
+
+    <body>
+        <h2> Pizza Guys Order Form </h2>
+        <img 
+        src="http://cliparts.co/cliparts/8Tz/nLj/8TznLjRTp.jpg"
+        width="300px"
+        title="Pizza!">
+
+        <form id="PizzaForm" method="" action="#">
+            <p> Name: <input type="text" name="name" placeholder="Your Name" required></p>
+            <p> Address: <input type="text" name="address" placeholder="Your Address" required></p>
+            <p> Phone-Num: <input type="tel" name="telNumber" placeholder="XXX-XXX-XXXX" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required></p>
+            <p> Pizza Size: 
+                <input type="radio" name="size" value="large" checked required> Large
+                <input type="radio" name="size" value="medium"> Medium
+                <input type="radio" name="size" value="small"> Small
+            </p>
+            <p> Pizza Toppings: 
+                <input type="checkbox" name="toppings" value="sausage"> Sausage
+                <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni
+                <input type="checkbox" name="toppings" value="olives"> Olives
+                <input type="checkbox" name="toppings" value="anchovies"> Anchovies
+                <input type="checkbox" name="toppings" value="onions"> Onions
+            </p>
+            <p> <input type="submit" value="Place Order"> <input type="reset" value="Clear"></p>
+        </form>
+    </body>
+</html>
