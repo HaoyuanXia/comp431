@@ -1,2 +1,3 @@
-# comp431
-Comp431 Web Development
+# comp431/531
+Comp531 Web Development
+Author Haoyuan Xia
