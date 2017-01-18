@@ -1,43 +1,52 @@
-<h2> My name: Haoyuan Xia </h2>
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Haoyuan Xia">
+    </head>
+    <body>
+        <h2> My name: Haoyuan Xia </h2>
 
-<img
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
-width="300px"
-title="The starry night">
+        <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+        width="300px"
+        title="The starry night">
 
-<p>
-    The picture above is called "The Starry Night". It is an oil on canvas by the Dutch post-impressionist painter Vincent van Gogh. Painted in June 1889, it depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an idealized village. It has been in the permanent collection of the Museum of Modern Art in New York City since 1941, acquired through the Lillie P. Bliss Bequest. It is regarded as among Van Gogh's finest works, and is one of the most recognized paintings in the history of Western culture.
-</p>
+        <p>
+            The picture above is called "The Starry Night". It is an oil on canvas by the Dutch post-impressionist painter Vincent van Gogh. Painted in June 1889, it depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an idealized village. It has been in the permanent collection of the Museum of Modern Art in New York City since 1941, acquired through the Lillie P. Bliss Bequest. It is regarded as among Van Gogh's finest works, and is one of the most recognized paintings in the history of Western culture.
+        </p>
 
-<p>
-    <h3> Some useful links: </h3>
-    Wikipedia of "The Starry Night"
-    <a href="https://en.wikipedia.org/wiki/The_Starry_Night" title="wikipedia of the picture">
-    Click me
-    </a>
-    <br>
-    Wikipedia of Vincent van Gogh
-    <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh" title="wikipedia of Vincent van Gogh">
-    Click me
-    </a>
-</p>
+        <p>
+            <h3> Some useful links: </h3>
+            Wikipedia of "The Starry Night"
+            <a href="https://en.wikipedia.org/wiki/The_Starry_Night" title="wikipedia of the picture">
+            Click me
+            </a>
+            <br>
+            Wikipedia of Vincent van Gogh
+            <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh" title="wikipedia of Vincent van Gogh">
+            Click me
+            </a>
+        </p>
 
-<textarea rows="4" cols="50" id="textArea">
-Leave your comment here
-</textarea>
-<br>
-<button type="button">Submit</button>
-<button type="button" id="clear" onclick="clear()">Clear</button>
+        <textarea rows="4" cols="50" id="textArea" placeholder="Leave your comment hear"></textarea>
+        <br>
+        <button type="button">Submit</button>
+        <button type="button" id="clear" onclick="reset()">Clear</button>
 
-<p> 
-    <span id="indicator">15</span>
-    <button type="button" onclick="pause()">Pause</button>
-    <button type="button" onclick="resume()">Resume</button>
-</p>
-
+        <p> 
+            <span id="indicator">15</span>
+            <button type="button" onclick="pause()">Pause</button>
+            <button type="button" onclick="resume()">Resume</button>
+        </p>
+    </body>
 
 <script type="text/javascript">
     var myInterval = setInterval(count, 1000);
+    function reset() {            
+        var textArea = document.getElementById("textArea");
+        textArea.value = "";
+    }
     function count() {
         var indicator = document.getElementById("indicator");
         if(indicator.innerHTML == "0") {
@@ -52,10 +61,7 @@ Leave your comment here
     function resume() {
         myInterval = setInterval(count, 1000);
     }
-    function clear() {
-        var textArea = document.getElementById("textArea");
-        textArea.value = "Leave your comment here";
-    }
+
     function timeoutAlert() {
         alert("the page will redirect when the counter reaches zero");
     }
