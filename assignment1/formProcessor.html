@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Haoyuan Xia">
+    </head>
+    <body>
+        <table id="info" border="1">
+            <tr>
+                <th>Keys</th>
+                <th>Values</th>
+            </tr>
+            <tr>
+                <td>Account Name</td>
+                <td>Account Name</td>
+            </tr>
+            <tr>
+                <td>Display Name</td>
+                <td>Display Name</td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td>Email Address</td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td>Phone Number</td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td>Date of Birth</td>
+            </tr>
+            <tr>
+                <td>Zipcode</td>
+                <td>Zipcode</td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>Password</td>
+            </tr>
+            <tr>
+                <td>TimeStamp</td>
+                <td>TimeStamp</td>
+            </tr>
+    </body>
+
+
+    <script type="text/javascript">
+        function setParms() {
+            var query = location.search.substring(1).split('&');
+            var rows = document.getElementById("info");
+            for(var i = 0; i < query.length; i++) {
+                var pos = query[i].split('=');
+                //console.log(pos[0]);
+                //console.log(pos[1]);
+                switch(pos[0]) {
+                    case "accountName": 
+                        rows.rows[1].cells[1].innerHTML = pos[1];
+                        break;
+                    case "displayName": 
+                        rows.rows[2].cells[1].innerHTML = pos[1];
+                        break;
+                    case "emailAddress": 
+                        rows.rows[3].cells[1].innerHTML = pos[1].replace("%40", "@");
+                        break;
+                    case "phoneNumber": 
+                        rows.rows[4].cells[1].innerHTML = pos[1];
+                        break;
+                    case "dateOfBirth": 
+                        rows.rows[5].cells[1].innerHTML = pos[1];
+                        break;
+                    case "zipcode": 
+                        rows.rows[6].cells[1].innerHTML = pos[1];
+                        break;
+                    case "password": 
+                        rows.rows[7].cells[1].innerHTML = pos[1];
+                        break;
+                    case "timestamp": 
+                        rows.rows[8].cells[1].innerHTML = new Date(Number(pos[1]));
+                        break;
+                    default: break;
+                }
+            }
+            
+        }
+        setParms();
+    </script>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Haoyuan Xia">
+        <title>RiceBook -- Comp531 Web Development</title>
+        <script type="text/javascript">
+            function check() {
+                var form = document.getElementById('register');
+                if(form.password.value != form.passwordConfirmation.value) {
+                    alert("passwords don't match");
+                    return false;
+                }
+
+                if((new Date().getFullYear() 
+                    - Number(form.dateOfBirth.value.substring(0,4))) < 18) {
+                    alert("You must be aged 18 or above");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h2>RiceBook</h2>
+        <h3>Registration</h3>
+
+        <form id="register" name="register" method="GET" action="formProcessor.html"  onsubmit="return check()" > 
+            <fieldset>
+                <legend>Personal Information</legend>
+                Account name:<br>
+                <input type="text" name="accountName" placeholder="Your Account Name" 
+                    pattern="[a-z|A-Z][a-z|A-Z|\d]*" 
+                    title="Account name contains digits and letters, but may not start with a digit" ><br>
+                Display name:<br>
+                <input type="text" name="displayName" placeholder="Your Display Name" ><br>
+                Email Address:<br>
+                <input type="email" name="emailAddress" placeholder="abc@def.com"  
+                    title="Please input a valid email address, for example, abc@def.com"><br>
+                Phone Number:<br>
+                <input type="text" name="phoneNumber" placeholder="XXX-XXX-XXXX" pattern="\d{3}-\d{3}-\d{4}"
+                    title="Please input a valid phone number, for example, 123-456-7890"><br>
+                Data of Birth:<br>
+                <input type="date" name="dateOfBirth"><br>
+                Zipcode:<br>
+                <input type="number" name="zipcode" min="10000" max="99999"
+                    title="Please input a valid Zipcode, for example, 77005"><br>
+                Password:<br>
+                <input type="password" name="password"><br>
+                Password Confirmation:<br>
+                <input type="password" name="passwordConfirmation" ><br>
+                <input type="hidden" name="timestamp">
+
+                <input type="reset" name="reset" value="clear"> <br>
+                <input type="submit" name="submit" value="submit"><br>
+            </fieldset>
+    </body>
+</html>     
+
+<script>
+    document.register.timestamp.value = Date.now();
+</script>
