@@ -1,0 +1,29 @@
+h1 {
+	font-family: "Apple Chancery"
+}
+body {
+	text-align: center;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+}
+
+img {
+	height: 128px;
+	width: 128px;
+}
+ 
+ th {
+ 	text-align: center;
+ }
+
+.card-noImg h4 {
+	text-align: center;
+}
+
+.card-noImg h5 {
+	text-align: center;
+}
