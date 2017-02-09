@@ -1,0 +1,38 @@
+h2, h3, h4 {
+	font-family: "Apple Chancery";
+	position: relative;
+	
+}
+button {
+	font-family: "Microsoft Yahei";
+	font-size: 18px;
+}
+body {
+	
+}
+div #panel {
+	margin-left: auto;
+	margin-right: auto;
+}
+#entry {
+	width: 500px;
+	height: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("https://s-media-cache-ak0.pinimg.com/736x/52/e1/79/52e179acb88d549255db5a012612ef39.jpg");
+	background-size: 500px 650px;
+}
+#myCanvas {
+	position: relative;
+	top: 20;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("http://www.hdiphone6wallpapers.net/iphone-6-backgrounds/iphone-6-wallpapers-1/iphone-6-wallpapers-hd-13405fukm-1080x1920.jpg");
+	background-size: 500px 650px;
+	position: relative;
+	top: 20px;
+}
+
+button {
+	width: 100px;
+}

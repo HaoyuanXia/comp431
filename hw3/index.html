@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="Haoyuan Xia">
+	<title>
+		Snowball Battle Game
+	</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body style="text-align: center;">
+
+<div id="panel" style="display: none;">
+	<div class="col-sm-3"> </div>
+	<div id="playField" class="col-sm-6">
+		<canvas id="myCanvas" width="500px" height="650px"></canvas>
+	</div>
+
+</div>
+
+
+<div id="entry">
+
+	<div style="position: relative; top: 30px;">
+		<div>
+			<h2> Welcome to Snowball Battle </h2>
+			<h4> Author: Haoyuan Xia </h4>
+			<h3> Select a Difficulty Level </h3>
+		</div>
+		<div>
+			<p><button class="btn-info" onclick="startGame('easy')"> Easy </button></p>
+			<p><button class="btn-info" onclick="startGame('medium')">Medium</button></p>
+			<p><button class="btn-info" onclick="startGame('hard')"> Hard </button></p>
+		</div>
+
+		<div style="font-family: 'Comic Sans MS'; font-size: 20px" class="col-sm-6">Best Score: </div>
+		<div style="font-family: 'Comic Sans MS'; font-size: 20px" class="col-sm-6">Best Hit-Rate: </div>
+
+		<div style="font-family: 'Comic Sans MS'; font-size: 20px" id="bestScore" class="col-sm-6">None</div>
+		<div style="font-family: 'Comic Sans MS'; font-size: 20px" id="bestHitRate" class="col-sm-6">None</div>
+
+
+	</div>
+</div>
+
+
+<div style="display: none;">
+	<img src="http://vignette1.wikia.nocookie.net/southpark/images/7/70/165px-KyleBroflovski.png/revision/20150211181234" id="kyle1" width="80" height="120">
+</div>
+
+<div style="display: none;">
+	<img src="http://vignette2.wikia.nocookie.net/southpark/images/8/82/Kyle_Broflovski.png/revision/latest?cb=20090823142522&path-prefix=it" id="kyle2" width="80" height="120">
+</div>
+
+<div style="display: none;">
+	<img src="http://vignette2.wikia.nocookie.net/southpark/images/6/6f/KennyMcCormick.png/revision/20100107224129" id="kenny1" width="80" height="120">
+</div>
+
+<div style="display: none;">
+	<img src="http://vignette3.wikia.nocookie.net/threadbaresouthpark/images/6/62/Kennyfight.png/revision/20120108023513" id="kenny2" width="80" height="120">
+</div>
+
+<div style="display: none;">
+	<img src="http://vignette1.wikia.nocookie.net/battlefordreamisland/images/4/49/Snowball_2.png/revision/latest?cb=20120212143949" id="snowball1" width="30" height="30">
+</div>
+
+<div style="display: none;">
+	<img src="http://vignette1.wikia.nocookie.net/dofus/images/0/04/Snowball.png/revision/latest?cb=20121223120918" id="snowball2" width="30" height="30">
+</div>
+
+
+<div style="display: none;">
+	<img src="http://clipartoons.com/wp-content/uploads/2016/01/bomb-clip-art-images-free-for-commercial-use-1.png" id="bomb" width="120" height="80">
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
