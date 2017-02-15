@@ -82,7 +82,7 @@
                 </span> 
                 <ul className="todo"> {
                     this.state.todoItems.map(item => ( 
-                        <ToDoItem key={item.id} text={item.text} remove={() => this.removeTodo(item.id)} />)
+                        <ToDoItem id={item.id} text={item.text} remove={() => this.removeTodo(item.id)} />)
                     )
                 } 
                 </ul> 
