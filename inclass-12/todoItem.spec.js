@@ -16,9 +16,10 @@ describe('Validate ToDoItem', () => {
         // use TestUtils.renderIntoDocument
         // findDOMNode and assert 3 children of the ToDoItem element
         // assert the innerHTML of the todo is the text you initially set
-        const node = TestUtils.renderIntoDocument(<div>
+        const parent = TestUtils.renderIntoDocument(<div>
             <ToDoItem text={"test"} id={0} done={false} toggle={() => {}} remove={() => {}} />
-        </div>).children[0]
+        </div>)
+	var node = findDOMNode(parent).children[0]
         expect(node.children.length).to.equal(3)
         expect(node.children[1].innerHTML).to.equal("test")
     })
@@ -27,9 +28,10 @@ describe('Validate ToDoItem', () => {
         // use TestUtils.renderIntoDocument
         // findDOMNode and assert 3 children of the ToDoItem element
         // assert there is no child with classname 'completed'
-        const node = TestUtils.renderIntoDocument(<div>
+        const parent = TestUtils.renderIntoDocument(<div>
             <ToDoItem text={"test"} id={0} done={false} toggle={() => {}} remove={() => {}} />
-        </div>).children[0]
+        </div>)
+	var node = findDOMNode(parent).children[0]
         expect(node.children.length).to.equal(3)
         for(var child in node.children) {
             expect(child.className).to.not.equal("completed")
