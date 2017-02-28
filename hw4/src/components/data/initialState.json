@@ -1,0 +1,14 @@
+{
+    "location": "profilePage",
+    "registerInfo": "",
+    "loginInfo": "",
+    "userList": [
+        {"accountName": "Tom", "password": "abc", "isLogged": false},
+        {"accountName": "Sammy", "password": "abc", "isLogged": true},
+        {"accountName": "Jerry", "password": "abc", "isLogged": false}
+    ],
+    "user": {
+        "accountName": "Sammy", 
+        "password": "abc"
+    }
+}

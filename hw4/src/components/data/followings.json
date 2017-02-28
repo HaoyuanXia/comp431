@@ -1,0 +1,24 @@
+{
+    "followings": [
+        {
+            "id": 0,
+            "picture":"https://img.clipartfest.com/9ea3de96592f0f574cd055f2bd69fd2e_-tiger-animal-555pxpng-clipart-animal-png_555-878.png",
+            "name":"Tom",
+            "status":"Life is always harrrrrrrd"
+        },
+
+        {
+            "id": 1,
+            "picture":"https://s-media-cache-ak0.pinimg.com/originals/a0/a3/72/a0a3729b207cdc5a340ba3f33c878540.png",
+            "name":"Jenny",
+            "status":"Life is like a piece of shit"
+        },
+
+        {
+            "id": 2,
+            "picture":"https://s-media-cache-ak0.pinimg.com/originals/73/d1/5a/73d15a40e00dcda90f97e798faf28170.jpg",
+            "name":"Branda",
+            "status":"Life is like a box of chocolate"
+        }
+    ]
+}
