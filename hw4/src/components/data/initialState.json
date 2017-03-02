@@ -1,14 +1,14 @@
 {
-    "location": "profilePage",
+    "location": "landingPage",
     "registerInfo": "",
     "loginInfo": "",
-    "userList": [
-        {"accountName": "Tom", "password": "abc", "isLogged": false},
-        {"accountName": "Sammy", "password": "abc", "isLogged": true},
-        {"accountName": "Jerry", "password": "abc", "isLogged": false}
-    ],
     "user": {
         "accountName": "Sammy", 
-        "password": "abc"
+        "displayName": "Sammy",
+        "email": "sammy@rice.edu",
+        "phoneNum": 1234567890,
+        "dateOfBirth": "1990-01-01",
+        "zipCode": 77005,
+        "password": "abcde"
     }
 }

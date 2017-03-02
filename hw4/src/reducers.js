@@ -13,29 +13,32 @@ const Reducer = (state = {
         case 'REGISTER': {
             return {
                 ...state,
-                userList: [
-                    ...state.userList,
-                    {
-                        accountName: action.user.accountName, 
-                        password: action.user.password,
-                        isLogged: false
-                    }
-                ]
+                location: 'mainPage',
             }
         }
         case 'LOGIN': {
             return {
                 ...state,
-                location: 'mainPage',
-                userList: state.userList.map(({accountName, password, isLogged}) => (
-                    {accountName, password, isLogged: true}
-                ))
+                location: 'mainPage'
             }
         }
         case 'LOGOUT': {
             return {
                 ...state,
                 location: 'landingPage'
+            }
+        }
+        case 'REGISTER_INFO': {
+            if(action.info === 'Register Success') {
+                return {
+                    ...state,
+                    registerInfo: ''
+                }
+            } else {
+                return {
+                    ...state,
+                    registerInfo: action.info
+                }
             }
         }
         case 'LOGIN_INFO': {
@@ -47,7 +50,33 @@ const Reducer = (state = {
             } else {
                 return {
                     ...state,
-                    loginInfo: '*** Please Check Your Account Name and Password'
+                    loginInfo: action.info
+                }
+            }
+        }
+        case 'UPDATE_INFO': {
+            if(action.info === 'Update Success') {
+                return {
+                    ...state,
+                    updateInfo: ''
+                }
+            } else {
+                return {
+                    ...state,
+                    updateInfo: action.info
+                }
+            }
+        }
+        case 'UPDATE_PROFILE': {
+            return {
+                ...state,
+                user: {
+                    ...state.user,
+                    displayName: action.newProfile.displayName,
+                    email: action.newProfile.email,
+                    zipCode: action.newProfile.zipCode,
+                    password: action.newProfile.password,
+                    phoneNum: action.newProfile.phoneNum
                 }
             }
         }
@@ -63,6 +92,18 @@ const Reducer = (state = {
                     },
                     ...state.articles
                 ]
+            }
+        }
+        case 'TO_MAIN_PAGE': {
+            return {
+                ...state,
+                location: 'mainPage'
+            }
+        }
+        case 'TO_PROFILE_PAGE': {
+            return {
+                ...state,
+                location: 'profilePage'
             }
         }
     }

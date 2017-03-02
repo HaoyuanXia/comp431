@@ -34,9 +34,9 @@ const Login = ({userList, login, info, setLoginInfo}) => {
                 </div>
 
                 <div className='form-group'>
-                    <input type='submit' className='btn btn-success' onSubmit={(event) => {
+                    <input type='submit' className='btn btn-success' onClick={(event) => {
                         event.preventDefault();
-                        validate(e, userList, login, setLoginInfo)}
+                        validate(userList, login, setLoginInfo)}
                     } value='Login' />
                 </div>
 
@@ -55,8 +55,12 @@ Login.propsType = {
     setLoginInfo: PropTypes.func.isRequired
 }
 
-const validate = (e, userList, login, setLoginInfo) => {
-    e.preventDefault();
+const validate = (userList, login, setLoginInfo) => {
+    if(userInfo.accountName.value == '' || userInfo.password.value == '') {
+        setLoginInfo('*** Please input account name and password')
+        return
+    }
+    /*
     userList.forEach((user) => {
         if(userInfo.accountName.value === user.accountName
             && userInfo.password.value === user.password) {
@@ -65,8 +69,9 @@ const validate = (e, userList, login, setLoginInfo) => {
                 return
             }
     })
-
-    setLoginInfo("Login Fail")
+    */
+    
+    login(userInfo.accountName)
 
     userInfo.accountName.value = ''
     userInfo.password.value = ''

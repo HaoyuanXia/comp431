@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react'
 import {connect} from 'react-redux'
 
-const Nav = ({editProfile, logout, user, location}) => {
+const Nav = ({editProfile, logout, toMain, location}) => {
     return(
         <div className='nav_bar'>
             <nav className='navbar navbar-inverse navbar-static-top'>
@@ -11,11 +11,11 @@ const Nav = ({editProfile, logout, user, location}) => {
 
                 <ul className="nav navbar-nav navbar-right">
                     {location == 'mainPage' ? (
-                        <li><a onClick={() => toProfile()} href='#'>Edit Profile</a></li>
+                        <li><a onClick={() => editProfile()} href='#'>Edit Profile</a></li>
                     ) : (
                         <li><a onClick={() => toMain()} href='#'>Main Page</a></li>
                     )}
-                    <li><a onClick={() => logout()} href='#'>Logout({user.accountName})</a></li>
+                    <li><a onClick={() => logout()} href='#'>Logout(Sammy)</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,8 +35,9 @@ export default connect(
     },
     (dispatch) => {
         return {
-            editProfile: () => {},
-            logout: () => {}
+            editProfile: () => dispatch({type: 'TO_PROFILE_PAGE'}),
+            logout: () => dispatch({type: 'LOGOUT'}),
+            toMain: () => dispatch({type: 'LOGIN'})
         }
     }
 )(Nav)

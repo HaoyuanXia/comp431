@@ -54,7 +54,7 @@ class ArticlesView extends React.Component {
                     <span className='input-group-addon' id='magnifyingGlass-addOn'>
                         <img id='magnifyingGlass' src='https://cdn1.iconfinder.com/data/icons/user-interface-elements/154/search-loop-512.png'/>
                     </span>
-                    <input id='search' type='text' className="form-control" placeholder='Search your feed' onChange={() => search(this)} />
+                    <input id='search' type='text' className="form-control" placeholder='Search your feed' onChange={(event) => search(this,event)} />
                 </div>
 
                 <table className='table' id='table'>
@@ -71,8 +71,8 @@ class ArticlesView extends React.Component {
     }
 }
 
-const search = (self) => {
-    var keyWord = document.getElementById('search').value
+const search = (self,event) => {
+    var keyWord = event.target.value
     if(keyWord === "") {
         self.setState({
             ...self.state,

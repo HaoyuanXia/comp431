@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Headline = ({user}) => {
+const Headline = (props) => {
     return(
         <div className='content headline'>
             <img src='http://www.downloadclipart.net/large/1509-cartoon-owl-design.png' alt='image'
                 className='img-responsive center-block' id='image' />
             <div className='halfSpace' />
-            <label className='displayName'> {user.accountName} </label>
+            <label className='displayName'> Sammy </label>
             <div className='space' />
             <div id='status'> For a better life, be a better owl  !! </div>
             <div className='halfSpace' />

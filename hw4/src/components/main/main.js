@@ -5,15 +5,14 @@ import Following from './following'
 import {connect} from 'react-redux'
 import Article from '../article/Article'
 
-
-export const Main = ({user}) => {
+export const Main = (props) => {
     return(
         <div>
-            <Nav user={user} />
+            <Nav />
             <div className='container-fluid content'>
                 <div className='row'>
                     <div className='col-md-3'>
-                        <Headline user={user}/>
+                        <Headline />
                         <div className='space'/>
                         <Following followings={require('../data/followings.json').followings}/>
                     </div>
@@ -30,7 +29,6 @@ export const Main = ({user}) => {
 export default connect(
     (state) => {
         return {
-            user: state.userList.filter((user) => user.isLogged)[0]
         }
     },
     (dispatch) => {
