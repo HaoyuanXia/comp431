@@ -5,13 +5,13 @@ const index = (req, res) => {
 const getHeadlines = (req, res) =>{
     res.send({ headlines:[{
             username: 'me',
-            headline: "Happy"
+            headline: "Nice to see you!"
         }]
     })
 }
 const putHeadlines = (req, res) =>{
     res.send({ 
-            username: 'Evita',
+            username: 'Haoyuan',
             headline: req.body.headline || 'N/A'
     })
 }
@@ -23,7 +23,7 @@ const getEmail = (req, res) => {
 }
 const putEmail = (req, res) =>{
     res.send({ 
-            username: "Evita",
+            username: "Haoyuan",
             email: req.body.email || "N/A"
     })
 }
@@ -35,7 +35,7 @@ const getZipcode = (req, res) =>{
 }
 const putZipcode = (req, res) =>{
     res.send({
-            username: "Evita",
+            username: "Haoyuan",
             zipcode: req.body.zipcode || "N/A"
     })
 }
@@ -48,7 +48,7 @@ const getAvatars = (req, res) =>{
 }
 const putAvatars = (req, res) =>{
     res.send({
-            username: "Evita",
+            username: "Haoyuan",
             avatar: req.body.avatar ||  "N/A"
     })
 }
