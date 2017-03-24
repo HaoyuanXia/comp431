@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/actions.spec.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">src/</a> actions.spec.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">65.31% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>32/49</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>6/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">76.92% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>10/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">60.47% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>26/43</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">3 statements, 1 branch</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { expect } from 'chai'
+import mockery from 'mockery'
+import fetch, { mock } from 'mock-fetch'
+&nbsp;
+describe('Validate actions (these are functions that dispatch actions)', () =&gt; {
+&nbsp;
+    let url, resource, succRegisterAction, failRegisterAction, toMainAction, Reducer
+&nbsp;
+    beforeEach(() =&gt; {
+            if(<span class="missing-if-branch" title="if path not taken" >I</span>mockery.enable) {
+                mockery.<span class="cstat-no" title="statement not covered" >enable({warnOnUnregistered: false, useCleanCache:true})</span>
+                mockery.<span class="cstat-no" title="statement not covered" >registerMock('node-fetch', fetch)</span>
+                require(<span class="cstat-no" title="statement not covered" >'node-fetch')</span>
+                url = <span class="cstat-no" title="statement not covered" >require('./actions').url</span>
+                resource = <span class="cstat-no" title="statement not covered" >require('./actions').default</span>
+                succRegisterAction = <span class="cstat-no" title="statement not covered" >require('./actions').succRegisterAction</span>
+                failRegisterAction = <span class="cstat-no" title="statement not covered" >require('./actions').failRegisterAction</span>
+                toMainAction = <span class="cstat-no" title="statement not covered" >require('./actions').toMainAction</span>
+                Reducer = <span class="cstat-no" title="statement not covered" >require('./reducers').default</span>
+            }
+    })
+&nbsp;
+    afterEach(() =&gt; {
+        if (<span class="missing-if-branch" title="if path not taken" >I</span>mockery.enable) {
+            mockery.<span class="cstat-no" title="statement not covered" >deregisterMock('node-fetch')</span>
+            mockery.<span class="cstat-no" title="statement not covered" >disable()</span>
+        }
+    })
+    
+    it('resource should be a resource (i.e., mock a request)', (done)=&gt; {
+        mock(`${url}/test`, {
+            method: 'GET',
+            headers: {'Content-Type': 'application/json'},
+            json: { test: 'test'}
+        })
+&nbsp;
+        resource('GET', 'test').then(<span class="fstat-no" title="function not covered" >(response) =&gt; {</span>
+            expect(<span class="cstat-no" title="statement not covered" >response).to.exist</span>
+        })
+        .then(done)
+    })
+&nbsp;
+    it('resource should give me the http error', (done)=&gt; {
+		resource('GET', 'test').catch(<span class="fstat-no" title="function not covered" >(error) =&gt; {</span>
+            expect(<span class="cstat-no" title="statement not covered" >error).to.exist</span>
+		})
+        .then(done)
+	})
+&nbsp;
+    it('resource should be POSTable', (done)=&gt; {
+		const username = 'username'
+		const password = 'password'
+		
+		mock(`${url}/login`, {
+			method: 'POST',
+			headers: {'Content-Type': 'application/json'},
+			json: {username, password}
+		})
+        
+		resource('POST', 'login', {username, password })
+        .then(<span class="fstat-no" title="function not covered" >(response) =&gt; {</span>
+			expect(<span class="cstat-no" title="statement not covered" >response).to.eql({username: 'username', password: 'password'})</span>
+		})
+        .then(done)
+	})
+&nbsp;
+    it('should update error message (for displaying error mesage to user)', (done) =&gt; {
+        const state = Reducer({registerInfo: ''}, succRegisterAction)
+        expect(<span class="cstat-no" title="statement not covered" >state.registerInfo).to.eql('Registered Successfully!! ')</span>
+        done()
+    })
+&nbsp;
+    it('should update success message (for displaying success message to user)', (done) =&gt; {
+        const state = Reducer({registerInfo: ''}, failRegisterAction)
+        expect(<span class="cstat-no" title="statement not covered" >state.registerInfo).to.eql('Fail to Register')</span>
+        done()
+    })
+&nbsp;
+    it('should navigate (to profile, main, or landing)', (done) =&gt; {
+        const state = Reducer({location: 'landingPage'}, toMainAction)
+        expect(<span class="cstat-no" title="statement not covered" >state.location).to.eql('mainPage')</span>
+        done()
+    })
+&nbsp;
+})
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Mar 23 2017 20:40:42 GMT-0500 (CDT)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

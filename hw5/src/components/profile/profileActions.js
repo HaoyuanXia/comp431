@@ -5,7 +5,7 @@ export const initProfile = () => {
         const user = {
             displayName: 'Sammy'
         }
-        const emailPromise = resource('GET', 'email/')
+        const emailPromise = resource('GET', 'email')
         .then((response) => user.email = response.email)
         const zipcodePromise = resource('GET', 'zipcode')
         .then((response) => user.zipCode = response.zipcode)

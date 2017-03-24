@@ -1,14 +1,9 @@
 const initialState = require('./components/data/initialState.json')
-const initialArticles = require('./components/data/articles.json')
-const initialFollowing = require('./components/data/followings.json')
 
 const Reducer = (state = {
     location: initialState.location,
-    registerInfo: initialState.registerInfo,
-    loginInfo: initialState.loginInfo,
     articles: [],
     articlesDisplayed: [],
-    user: initialState.user,
     following: []
 }, action) => {
     switch(action.type) {
@@ -28,14 +23,18 @@ const Reducer = (state = {
                 location: 'mainPage',
                 user: {
                     ...state.user,
-                    displayName: action.username
+                    accountName: action.username
                 }
             }
         }
         case 'LOGOUT': {
             return {
                 ...state,
-                location: 'landingPage'
+                location: 'landingPage',
+                user: {},
+                articles: [],
+                articlesDisplayed: [],
+                following: []
             }
         }
         case 'REGISTER_INFO': {

@@ -55,7 +55,7 @@ const Card = ({article, index}) => (
 )
 
 
-const ArticlesView = ({articlesDisplayed, resumeArticles, filterArticles}) => (
+export const ArticlesView = ({articlesDisplayed, resumeArticles, filterArticles}) => (
     <div className='articlesView'>
         <div className="input-group">
             <span className='input-group-addon' id='magnifyingGlass-addOn'>

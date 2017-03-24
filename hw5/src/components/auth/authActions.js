@@ -20,12 +20,11 @@ export const login = ({username, password}) => {
     return (dispatch) => {
         resource('POST', 'login', {username, password})
         .then((response) => {
-            dispatch(init())
             dispatch({type: 'LOGIN', username: response.username})
+            dispatch(init())
         })
         
         .catch((error) => {
-            console.log(error)
             dispatch({type: 'LOGIN_INFO', info: 'Error logging in as ' + username})
         })
     }
