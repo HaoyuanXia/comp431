@@ -1,0 +1,54 @@
+{
+    "articles": [
+        {
+            "author": "Lorem" ,
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis vehicula diam, quis condimentum ligula volutpat nec. Duis et volutpat lacus. Proin consequat lectus erat, at molestie nisi vulputate ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrice        posuere cubilia Curae Donec tempor elit eros, eu ornare nisl facilisis eu. Suspendisse sit amet mattis dui. In lacinia massa et enim aliquet condimentum.",
+            "timestamp": "",
+            "picture" : "https://img.clipartfest.com/392d43268e86b0bd1c86f4208d2c55aa_stuffed-animals-clip-art-clipart-of-cartoon-animals_2555-4009.png"
+        },
+
+        {   
+            "author": "Pellentesque",
+            "text": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc justo leo, laoreet et tempus sit amet, efficitur sit amet dolor. Nunc ornare ex magna, et rhoncus ex fermentum sed. Aenean facilisis nibh cursus dui euismod, quis volutpat enim tempor. Vivamus at mauris mattis libero cursus accumsan. Phasellus interdum porttitor eros, non tincidunt purus maximus sed. Donec at gravida sapien, non ultrices dolor.",
+            "timestamp": "",
+            "picture": ""
+        },
+
+        {
+            "author": "Donec",
+            "text": "Donec ut quam hendrerit, rhoncus mauris eget, bibendum purus. Proin mattis, urna vitae aliquam pellentesque, magna nisi cursus ipsum, in gravida dolor lectus a sapien. Curabitur sagittis ante in metus dapibus lacinia. In eu ornare metus. Nam quis ullamcorper tortor, in condimentum lectus. Nam tincidunt laoreet erat at malesuada. Aliquam justo nisl, tincidunt quis mi vel, tincidunt dictum sem.",
+            "timestamp": "",
+            "picture": "https://img.clipartfest.com/db894015f31737992a3d81314ccb4c09_cartoon-animals-clipart-clipart-of-cartoon-animals_3333-6253.png"
+        },
+
+        {
+            "author": "Vestibulum",
+            "text": "Vestibulum sed laoreet nulla, et tristique erat. Aliquam tempor, felis maximus rhoncus consequat, sem lorem elementum est, id ornare sem nisl eu augue. Sed efficitur mauris non efficitur tincidunt. Vestibulum finibus libero et ligula scelerisque, molestie aliquam nunc finibus. Nullam vitae consectetur quam. Pellentesque sit amet dui ante. Mauris ac rhoncus eros, ut dignissim enim. Aliquam ut placerat magna, mollis auctor enim.",
+            "timestamp": "",
+            "picture": ""
+        },
+
+        {
+            "author": "Aliquam",
+            "text":"Aliquam ultrices sit amet mi vel posuere. Vestibulum odio tortor, sodales ac rhoncus vel, iaculis et libero. Donec ultricies pellentesque vehicula. Nam hendrerit, lectus vitae pellentesque pulvinar, est justo mattis sapien, quis egestas leo purus et diam. Aliquam erat volutpat. Etiam malesuada purus in nisi semper, vel porta eros facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl mi, sollicitudin in lectus ac, imperdiet pretium leo. In pretium eros non velit congue scelerisque.",
+            "timestamp": "",
+            "picture": "https://img.clipartfest.com/9cf3a82e03799b8cb165c54be251397d_-dog-animal-lemmling-hunky-clipart-animals-png_555-744.png"
+        },
+
+        {
+            "author": "Cras",
+            "text": "Cras ullamcorper porta enim, ut pulvinar risus elementum sit amet. Ut sodales lorem eu mauris scelerisque interdum. Fusce ac elit sit amet eros luctus lacinia. Praesent fringilla auctor neque in dapibus. Suspendisse quam leo, bibendum a magna sit amet, mollis semper orci. Cras non enim vel elit rutrum elementum at nec eros.",
+            "timestamp": "",
+            "picture": ""
+        }
+    ],
+
+    "images": [
+        "https://img.clipartfest.com/392d43268e86b0bd1c86f4208d2c55aa_stuffed-animals-clip-art-clipart-of-cartoon-animals_2555-4009.png",
+        "https://img.clipartfest.com/db894015f31737992a3d81314ccb4c09_cartoon-animals-clipart-clipart-of-cartoon-animals_3333-6253.png",
+        "https://img.clipartfest.com/9cf3a82e03799b8cb165c54be251397d_-dog-animal-lemmling-hunky-clipart-animals-png_555-744.png",
+        "https://img.clipartfest.com/9ea3de96592f0f574cd055f2bd69fd2e_-tiger-animal-555pxpng-clipart-animal-png_555-878.png",
+        "http://www.clipartbest.com/cliparts/LcK/dRj/LcKdRjBpi.png",
+        "https://s-media-cache-ak0.pinimg.com/originals/73/d1/5a/73d15a40e00dcda90f97e798faf28170.jpg"
+    ]
+}
