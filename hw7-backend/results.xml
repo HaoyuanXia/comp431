@@ -1,0 +1,11 @@
+
+> RiceBookServer@0.0.0 test /Users/Haoyuan/Documents/2nd_Semester/Comp531 Web Dev/hw6_backend
+> mocha --opts mocha.opts src/**/*.spec.js "--reporter" "xunit" "bash:" "xunit/results.xml"
+
+<testsuite name="Mocha Tests" tests="5" failures="0" errors="0" skipped="0" timestamp="Thu, 06 Apr 2017 00:56:39 GMT" time="0.105">
+<testcase classname="Validate POST /article" name="should GET articles" time="0.033"/>
+<testcase classname="Validate POST /article" name="should POST a new articles" time="0.028"/>
+<testcase classname="Validate POST /article" name="should GET articles with length + 1" time="0.003"/>
+<testcase classname="validate PUT /headline" name="should GET headline for hx12" time="0.003"/>
+<testcase classname="validate PUT /headline" name="should PUT headline for hx12" time="0.004"/>
+</testsuite>
