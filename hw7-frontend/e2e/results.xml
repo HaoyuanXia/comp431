@@ -1,0 +1,18 @@
+
+> starter@1.0.0 e2e:base /Users/Haoyuan/Documents/2nd_Semester/Comp531 Web Dev/assignment5
+> mocha --opts e2e/mocha.opts e2e/*.spec.js "--reporter" "xunit"
+
+<testsuite name="Mocha Tests" tests="12" failures="0" errors="0" skipped="0" timestamp="Thu, 06 Apr 2017 00:58:26 GMT" time="35.562">
+<testcase classname="Test register a new user" name="should create a new article and it should appears in feed " time="1.808"/>
+<testcase classname="Test register a new user" name="should edit the first article and change the content" time="0.809"/>
+<testcase classname="Test register a new user" name="should search for specical &amp;quot and display that article" time="1.301"/>
+<testcase classname="Test following functions" name="should add a following" time="3.242"/>
+<testcase classname="Test following functions" name="should remove a following" time="3.119"/>
+<testcase classname="Test Login and Update Headline" name="should log in as the test user" time="0.556"/>
+<testcase classname="Test Login and Update Headline" name="Update the headline and verify the change" time="0.746"/>
+<testcase classname="Test update profile" name="should update email" time="1.487"/>
+<testcase classname="Test update profile" name="should update zipcode" time="1.322"/>
+<testcase classname="Test update profile" name="shoud update password and get &quot;will not change&quot; message" time="1.186"/>
+<testcase classname="Test register a new user" name="should register a new user" time="2.011"/>
+<testcase classname="shutdown" name="now" time="0.089"/>
+</testsuite>
